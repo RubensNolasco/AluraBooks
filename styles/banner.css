@@ -22,7 +22,7 @@
 }
 .banner__pesquisa::placeholder{
     font-family: var(--fonte-principal);
-    font-size: 1.412em;
+    font-size: 0.875em;
     font-weight: 400;
     text-align: center;
     color: var(--branco);
