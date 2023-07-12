@@ -1,10 +1,7 @@
 @import url(/styles/header.css);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-
-
-
-
-:root{
+@import url(/styles/banner.css);
+@import url(/styles/carrossel.css);
+:root {
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
     --laranja: #EB9B00;
@@ -12,9 +9,10 @@
     --fonte-principal: 'Poppins', sans-serif;
 }
 
-body{
-   background-color: var(--cor-de-fundo);
-   font-family: var(--fonte-principal);
-   font-size:16px;
-   font-weight: 400;
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1em;
+
 }

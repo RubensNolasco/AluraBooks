@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/reset.css">
     <title>AluraBooks</title>
 </head>
 
@@ -46,7 +47,44 @@
             <a href="#"><img src="assets/Conta.svg" alt="Minha conta" class="container__imagem"></a>
         </div>
     </header>
-
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="         Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">últimos lançamentos</h2>
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/assets/ApacheKafka.svg" alt="Livro ApacheKafta"></div>
+                <div class="swiper-slide"><img src="/assets/Arquitetura.svg" alt="Livro Arquitetura"></div>
+                <div class="swiper-slide"><img src="/assets/Construct2.svg" alt="Livro Construct2"></div>
+                <div class="swiper-slide"><img src="/assets/Gestão2.svg" alt="Livro Gestão2"></div>
+                <div class="swiper-slide"><img src="/assets/Javascript.svg" alt="Livro Javascript"></div>
+                <div class="swiper-slide"><img src="/assets/Liderança.svg" alt="Livro Liderança"></div>
+                <div class="swiper-slide"><img src="/assets/MetricasAgeis.svg" alt="Livro Metricas Ageis"></div>
+                <div class="swiper-slide"><img src="/assets/Nodejs.svg" alt="Livro Nodejs"></div>
+                <div class="swiper-slide"><img src="/assets/Portugol.svg" alt="Livro Portugol"></div>
+                <div class="swiper-slide"><img src="/assets/ReactNative.svg" alt="Livro React Native"></div>
+                <div class="swiper-slide"><img src="/assets/Tuning.svg" alt="Livro Tuning"></div>
+                <div class="swiper-slide"><img src="/assets/UX.svg" alt="Livro UX"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination:{
+                el:'.swiper-pagination',
+                type:'bullets',
+            },
+        });
+    </script>
 </body>
 
 </html>
